@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usaha Muda | Make it simple</title>
+  <!-- Style Untuk Desktop mode (PC) -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Style Untuk Mobile Mode (Responsive) -->
+  <link rel="stylesheet" href="./assets/css/mobile.css">
+  <!-- Ambil Font Dari Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+  <!-- Header fullscreen -->
+  <header>
+    <!-- Header-main setelah diatur width pada css -->
+    <div class="header-main">
+      <section class="modal-chart">
+        <div class="charts">
+
+
+
+        </div>
+        <a href="checkout.html">Checkout</a>
+      </section>
+
+
+
+      <!-- Header logo -->
+      <a href="index.html" class="header-logo">
+        <h1>CV. Usaha Muda</h1>
+      </a>
+
+      <!-- Navbar -->
+      <ul class="header-navbar">
+        <li class="menu-category">
+          <a href="index.html" class="menu-title">Beranda</a>
+        </li>
+        <li class="menu-category">
+          <a href="kategori.html?kategori=all" class="menu-title">Produk Kami</a>
+        </li>
+        <li class="menu-category">
+          <a href="about.html" class="menu-title">Tentang Kami</a>
+        </li>
+        <li class="menu-category islogin">
+
+        </li>
+      </ul>
+
+
+      <!-- Cari Barang -->
+      <!-- Informasi Icon https://ionic.io/ionicons -->
+      <div class="header-search">
+        <input type="text" class="search-field" placeholder="cari produk">
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Sosial Media -->
+      <ul class="header-social-media">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Keranjang Belanja  -->
+      <div class="header-keranjang">
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline" class="bag"></ion-icon>
+          <span class="count">0</span>
+        </button>
+      </div>
+
+    </div>
+    <!-- End Of Header Main -->
+
+    <!-- Navigasi Untuk Versi Mobile (Smartphone) -->
+    <div class="mobile-navbar">
+      <!-- Home -->
+      <a href="index.html" class="action-btn">
+        <ion-icon name="home-outline" title="home"></ion-icon>
+        <span>Beranda</span>
+      </a>
+
+      <!-- Product -->
+      <a href="kategori.html?kategori=all" class="action-btn">
+        <ion-icon name="bag-handle-outline" title="Produk"></ion-icon>
+        <span>Produk</span>
+      </a>
+
+      <!-- About -->
+      <a href="about.html" class="action-btn">
+        <ion-icon name="people-outline" title="about"></ion-icon>
+        <span>About</span>
+      </a>
+
+      <span class="islogin2">
+
+      </span>
+
+
+    </div>
+  </header>
+  <!-- End Of Header -->
+
+
+  <!-- Banner Product -->
+  <div class="banner">
+    <div class="banner-content">
+      <p class="banner-subtitle">Trending item</p>
+      <h2 class="banner-title">Gergaji Mesin</h2>
+      <p class="banner-text">Harga dimulai dari</p>
+      <a href="#" class="banner-btn keranjang" data-id="9">Tambah Keranjang</a>
+    </div>
+    <img src="assets/images/produk/a_gergajimesin.webp">
+  </div>
+
+
+  <section class="category">
+    <div class="title-center">
+      <h2>Kategori</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit cupiditate, tempora id possimus
+        tempore!</p>
+    </div>
+
+    <div class="categories">
+      <div class="category-item">
+        <img src="./assets/images/icons/concrete-svgrepo-com.svg" alt="dress & frock" width="30">
+        <div class="category-detail">
+          <h3>Bahan Bangunan</h3>
+          <a href="kategori.html?kategori=bahan">Lihat Produk</a>
+        </div>
+      </div>
+      <div class="category-item">
+        <img src="./assets/images/icons/shovel-svgrepo-com.svg" alt="dress & frock" width="30">
+        <div class="category-detail">
+          <h3>Alat Bangunan</h3>
+          <a href="kategori.html?kategori=alat">Lihat Produk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Product -->
+  <div class="products">
+
+    <!-- Judul -->
+    <div class="title-center promo-title">
+      <h2>Promo hari ini</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit cupiditate, tempora id possimus
+        tempore!</p>
+    </div>
+
+    <!-- Promo Produk -->
+    <section class="product-promo">
+      <img src="./assets/images/produk/a_obeng.webp" alt="OBENG SET 31 IN 1">
+      <div class="detail">
+        <!-- Bintang -->
+        <div class="rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <a>OBENG SET 31 IN 1</a>
+        <p class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, doloremque!</p>
+        <!-- Harga -->
+        <div class="price-box">
+          <p class="price">Rp25.000</p>
+          <del>Rp50.000</del>
+        </div>
+        <!-- Masa Promo -->
+        <div class="countdown-box">
+          <p class="countdown-desc">Promo Selesai Dalam </p>
+          <div class="countdown">
+            <button class="btn-keranjang keranjang" data-id="10">Tambah Keranjang</button>
+            <section class="countdown-contents">
+              <div class="countdown-content">
+                <p class="display-number hari">0</p>
+                <p class="display-text">Hari</p>
+              </div>
+              <div class="countdown-content">
+                <p class="display-number jam">0</p>
+                <p class="display-text">jam</p>
+              </div>
+              <div class="countdown-content">
+                <p class="display-number menit">0</p>
+                <p class="display-text">Menit</p>
+              </div>
+              <div class="countdown-content">
+                <p class="display-number detik">0</p>
+                <p class="display-text">Detik</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Kami -->
+    <div class="title-center">
+      <h2>Products</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit cupiditate, tempora id possimus
+        tempore!</p>
+    </div>
+
+    <!-- Produk Kami -->
+    <div class="product-kami" id="our-product">
+      <!-- produk item diisi oleh javascript -->
+    </div>
+
+
+
+    <!-- End OF Produk kami -->
+
+    <button class="load-more-products">Load More</button>
+  </div>
+  <!-- End Of Products -->
+
+
+  <!-- Testimonial -->
+  <section class="testimonials">
+    <div class="title-center">
+      <h2>Testimonial</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit cupiditate, tempora id possimus
+        tempore!</p>
+    </div>
+
+    <div class="testimonials-box">
+      <!-- Main Testimonial - (Utama) -->
+      <div class="testimonial-card">
+        <img src="./assets/images/client/mikasa.webp" alt="alan doe" width="80" height="80">
+        <p class="testimonial-name">Mikasa Ackerman</p>
+        <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+        <p class="testimonial-desc">Terbaik Lah Pokoknya sesuai dengan provided services</p>
+      </div>
+
+      <!-- Testimonial Items  -->
+      <div class="testimonial-items">
+        <a href="#" class="testimonial-item active">
+          <img src="./assets/images/client/mikasa.webp" alt="alan doe" class="icon">
+          <div class="testimonial-content">
+            <h3>Mikasa Ackerman</h3>
+            <p>Terbaik Lah Pokoknya sesuai dengan provided services</p>
+          </div>
+        </a>
+        <a href="#" class="testimonial-item">
+          <img src="./assets/images/client/armin.webp" alt="alan doe" class="icon">
+          <div class="testimonial-content">
+            <h3>Armin Arlert</h3>
+            <p>Keren banget pokoknya maknyos abiss</p>
+          </div>
+        </a>
+        <a href="#" class="testimonial-item">
+          <img src="./assets/images/client/eren.webp" alt="alan doe" class="icon">
+          <div class="testimonial-content">
+            <h3>Eren Yeager</h3>
+            <p>Awalnya saya coba coba tapi malah pengen checkout lagi</p>
+          </div>
+        </a>
+      </div>
+      <!-- End of testimonial items -->
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <!-- Pembungkus Untuk Semua List -->
+    <div class="footer-nav">
+      <!-- List Untuk KAtegori Toko -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Kategori</h2>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="kategori.html?kategori=alat" class="footer-nav-link">Alat Bangunan</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="kategori.html?kategori=bahan" class="footer-nav-link">Bahan Bangunan</a>
+        </li>
+      </ul>
+
+      <!-- List Untuk Layanan Pelanggan -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Layanan Pelanggan</h2>
+        </li>
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <a href="tel:+607936-8058" class="footer-nav-link">(+62) 821 2566 3421</a>
+        </li>
+
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <a href="mailto:example@gmail.com" class="footer-nav-link">Jody@gmail.com</a>
+        </li>
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+          </div>
+          <a href="mailto:example@gmail.com" class="footer-nav-link">Jody@gmail.com</a>
+        </li>
+      </ul>
+
+      <!-- List Untuk informasi Toko -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Informasi Toko</h2>
+        </li>
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <address class="content">
+            Petojo Utara, DKI Jakarta, 25612
+          </address>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Footer Informasi -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy; <a href="#">Jody.com/mbimoad</a> all rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="./assets/js/script.js"></script>
+  <!-- Informasi Icon: https://ionic.io/ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

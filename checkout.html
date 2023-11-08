@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jody Ecommerce</title>
+  <!-- Style Untuk Desktop mode (PC) -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Style Untuk Mobile Mode (Responsive) -->
+  <link rel="stylesheet" href="./assets/css/mobile.css">
+  <!-- Ambil Font Dari Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header fullscreen -->
+  <header>
+    <!-- Header-main setelah diatur width pada css -->
+    <div class="header-main">
+      <!-- Header logo -->
+      <a href="index.html" class="header-logo">
+        <h1>Jody</h1>
+      </a>
+
+      <!-- Navbar -->
+      <ul class="header-navbar">
+        <li class="menu-category">
+          <a href="index.html" class="menu-title">Beranda</a>
+        </li>
+        <li class="menu-category">
+          <a href="kategori.html?kategori=all" class="menu-title">Produk Kami</a>
+        </li>
+        <li class="menu-category">
+          <a href="about.html" class="menu-title">Tentang Kami</a>
+        </li>
+        <li class="menu-category islogin">
+
+        </li>
+
+      </ul>
+
+
+      <!-- Cari Barang -->
+      <!-- Informasi Icon https://ionic.io/ionicons -->
+      <div class="header-search">
+        <input type="text" class="search-field" placeholder="cari produk">
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Sosial Media -->
+      <ul class="header-social-media">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Keranjang Belanja  -->
+      <div class="header-keranjang">
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
+      </div>
+
+    </div>
+    <!-- End Of Header Main -->
+
+    <!-- Navigasi Untuk Versi Mobile (Smartphone) -->
+    <div class="mobile-navbar">
+      <!-- Home -->
+      <a href="index.html" class="action-btn">
+        <ion-icon name="home-outline" title="home"></ion-icon>
+        <span>Beranda</span>
+      </a>
+
+      <!-- Product -->
+      <a href="kategori.html?kategori=all" class="action-btn">
+        <ion-icon name="bag-handle-outline" title="Produk"></ion-icon>
+        <span>Produk</span>
+      </a>
+
+      <!-- About -->
+      <a href="about.html" class="action-btn">
+        <ion-icon name="people-outline" title="about"></ion-icon>
+        <span>About</span>
+      </a>
+
+      <span class="islogin2">
+
+      </span>
+    </div>
+  </header>
+  <!-- End Of Header -->
+
+
+  <section class="ulasan checkout">
+    <div class="modal-center">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <h1>Checkout Success</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, eius. Ratione, laboriosam eveniet aliquam
+        aspernatur harum quo eos? Error, eaque.</p>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <!-- Pembungkus Untuk Semua List -->
+    <div class="footer-nav">
+      <!-- List Untuk KAtegori Toko -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Kategori</h2>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="kategori.html?kategori=alat" class="footer-nav-link">Alat Bangunan</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="kategori.html?kategori=bahan" class="footer-nav-link">Bahan Bangunan</a>
+        </li>
+      </ul>
+
+      <!-- List Untuk Layanan Pelanggan -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Layanan Pelanggan</h2>
+        </li>
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <a href="tel:+607936-8058" class="footer-nav-link">(+62) 821 2566 3421</a>
+        </li>
+
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <a href="mailto:example@gmail.com" class="footer-nav-link">Jody@gmail.com</a>
+        </li>
+
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+          </div>
+          <a href="mailto:example@gmail.com" class="footer-nav-link">Jody@gmail.com</a>
+        </li>
+      </ul>
+
+      <!-- List Untuk informasi Toko -->
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <h2 class="nav-title">Informasi Toko</h2>
+        </li>
+        <li class="footer-nav-item flex-start">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <address class="content">
+            Petojo Utara, DKI Jakarta, 25612
+          </address>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Footer Informasi -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy; <a href="#">Jody.com/mbimoad</a> all rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <!-- Informasi Icon: https://ionic.io/ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
