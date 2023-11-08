@@ -1,0 +1,182 @@
+/* Notebook */
+@media screen and (max-width: 1200px) {
+    .header-search {width: 190px;} 
+    .product-kami .product-item {
+      flex: 0 1 200px;
+    } 
+    .product-promo .btn-keranjang {
+      font-size: var(--ukuranteks-9);
+    }
+
+    .modal-chart {
+      right: 70px; 
+    }
+
+    
+    .ulasan .title-center .about-text {
+      width: 90%;
+    } 
+    .ulasan input,
+    .ulasan textarea {
+      width: 50%;
+    }
+  }
+  /* Tablet */
+  @media screen and (max-width: 1023px) {
+     /* Hide chart, navbar, sosmed */
+     .header-main {justify-content: space-around;}
+     .header-navbar,
+     .header-social-media {display: none;}
+     .banner img {
+       width: 200px;
+     } 
+     .title-center p {width: 80%;} 
+     .product-promo .countdown {
+       flex-direction: column-reverse;
+       justify-content: flex-start;
+       align-items: flex-start;
+     } .banner-subtitle {
+       font-size: 15px;
+     }
+      .banner-title {
+        font-size: 30px;
+     }
+      .banner-text {
+        font-size: 15px;
+    } 
+    .banner-btn {
+      font-size: 14px;
+    } .product-promo .btn-keranjang {
+      margin-top: 10px; 
+    }
+    .testimonials {
+      padding: 10px; 
+    }
+    .testimonial-card {
+      width: 350px;
+    } .mobile-navbar {
+      display: flex;
+    } 
+
+    .modal-chart {
+      right: 20px; 
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    .testimonial-items {
+      width: 60%
+    }
+  }
+  /* Smartphone */
+  @media screen and (max-width: 767px) {
+    .banner {padding: 50px 50px;}
+    .product-kami .product-item {
+      flex: 0 1 250px;
+    } 
+
+    .modal-chart a {
+      right: 70px; 
+      font-size: 12px; 
+    }
+    .modal-chart {
+      width: 220px; 
+    }
+    .chart-list img {
+      width: 50px; 
+      border-radius: 5px;
+    }
+    
+    .chart-list h1 {
+      font-size: var(--ukuranteks-9);
+    }
+    
+    .chart-list h4 {
+      font-size: var(--ukuranteks-10);
+    }
+    
+
+
+
+
+    .product-promo {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } .product-promo img {
+      width: 100%;
+    }
+    .product-promo .deskripsi {
+      width: 85%
+    }
+    .product-promo .detail {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } .product-promo .countdown {
+      align-items: center;
+      gap: 20px;
+    } .product-promo a {
+      font-size: var(--ukuranteks-3);
+    } .testimonials-box {
+      flex-direction: column;
+    } .testimonial-items {
+      width: 100%
+    } .testimonial-item {
+      justify-content: center;
+    } 
+    .testimonial-card,
+    .testimonial-item {
+      border-radius: unset;
+    }
+    .testimonial-card {
+      height: 290px;
+      width: 100%; 
+    }
+    .testimonial-content {
+      width: 70%;
+    }
+    .testimonial-desc {
+      font-size: 12px;
+    }
+    
+    .ulasan .title-center .about-text {
+      width: 90%;
+    } 
+    .ulasan input,
+    .ulasan textarea {
+      width: 80%;
+    }
+    .footer-nav {
+      flex-direction: column;
+      padding: 0 30px 30px 20px;
+      gap: 20px;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 560px) {
+    .banner-subtitle {font-size: var(--ukuranteks-7);}
+    .banner-text {font-size: var(--ukuranteks-7);}
+    .banner-title {font-size: var(--ukuranteks-4);}
+    .banner {padding: 30px 30px;}
+    .banner img {width: 150px}
+    .product-kami .product-item {
+      flex: 0 1 100%;
+    } 
+    /* .product-kami .product-item:nth-child(4) {display: none;}
+    .product-kami .product-item:nth-child(5) {display: none;}
+    .product-kami .product-item:nth-child(6) {display: none;}
+    .product-kami .product-item:nth-child(7) {display: none;}
+    .product-kami .product-item:nth-child(8) {display: none;} */
+    .product-kami .content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
