@@ -3,27 +3,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} a { 
-  text-decoration: none; 
-} li {
-  list-style: none; 
-} button {
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
   background: none;
   font: inherit;
   border: none;
   cursor: pointer;
-} img, ion-icon, button, a {
-  display: block; 
-} span {
-  display: inline-block; 
-} html {
+}
+img,
+ion-icon,
+button,
+a {
+  display: block;
+}
+span {
+  display: inline-block;
+}
+html {
   font-family: "Poppins", sans-serif;
-} input {
+}
+input {
   display: block;
   width: 100%;
   font: inherit;
 }
-
 
 /* Deklarasi variabel  */
 :root {
@@ -34,7 +43,7 @@
   --gelap: #484738;
   --sandy-brown: hsl(29, 90%, 65%);
   --merahmuda: hsl(0, 100%, 70%);
-  
+
   --davys-gray: hsl(0, 0%, 33%);
   --putihabu: hsl(0, 0%, 93%);
   --putih: hsl(0, 100%, 100%);
@@ -70,9 +79,8 @@
   --waktutransisi: 200ms ease;
 
   /* Width */
-  --max-width: 1350px; 
+  --max-width: 1350px;
 }
-
 
 /* ================================  Header */
 .header-main {
@@ -87,11 +95,9 @@
   /* Atur alignment element child secara vertikal */
   align-items: center;
   /* beri ruang dalam element atas bawah 20px */
-  padding: 20px; 
-  position:relative;
+  padding: 20px;
+  position: relative;
 }
-
-
 
 /* Header logo */
 .header-logo h1 {
@@ -174,16 +180,16 @@
   transition: var(--waktutransisi);
 }
 .header-navbar .menu-category > .menu-title.loginstyle {
-  display:inline-block;
-  padding: 3px 10px; 
-  background:var(--spanish-gray);
-  color:white; 
-  border-radius: 5px; 
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--spanish-gray);
+  color: white;
+  border-radius: 5px;
 }
 
 /* After untuk membuat element baru setelah element yg sudah ada */
 .header-navbar .menu-category > .menu-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -202,7 +208,7 @@
 
 /* Search */
 .header-search {
-  position: relative; 
+  position: relative;
   border: 1px solid var(--putihabu);
   border-radius: 10px;
 }
@@ -219,7 +225,7 @@
 
 /* Ketika sedang focus (input sedang aktif) */
 .search-field:focus {
-  border: unset; 
+  border: unset;
   outline: none;
 }
 
@@ -237,10 +243,8 @@
   transition: all var(--waktutransisi);
 }
 
-
 /* Navbar untuk smartphone */
 .mobile-navbar {
-  
   background: var(--putih);
   position: fixed;
   bottom: 0;
@@ -267,35 +271,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
-.mobile-navbar span {font-size: 13px;}
-
+}
+.mobile-navbar span {
+  font-size: 13px;
+}
 
 /* =============================== BANNER */
 .banner {
-  margin: 30px auto; 
+  margin: 30px auto;
   max-width: 1200px;
   padding: 100px 50px;
-  background:var(--dasar);
+  background: white;
   display: flex;
   justify-content: space-between;
-} .banner img {
-  width: 480px; 
+}
+.banner img {
+  width: 480px;
   height: auto;
-} .banner-subtitle {
+}
+.banner-subtitle {
   color: var(--gelap);
   font-size: 15px;
   font-weight: var(--tebalteks-500);
   text-transform: capitalize;
   letter-spacing: 2px;
   margin-bottom: 10px;
-} .banner-title {
+}
+.banner-title {
   color: var(--hitam);
   font-size: 50px;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 10px;
-} .banner-text {
+}
+.banner-text {
   display: block;
   color: var(--abu-gelap);
   font-size: 20px;
@@ -314,44 +323,51 @@
   padding: 6px 10px;
   border-radius: 5px;
   transition: var(--waktutransisi);
-} 
-.banner-btn:hover { background: var(--hitam); }
+}
+.banner-btn:hover {
+  background: var(--hitam);
+}
 
 /* ================== Kategori */
 .category {
   max-width: var(--max-width);
-  margin: auto; 
+  margin: auto;
   padding: 40px 0;
-} .categories {
+}
+.categories {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 30px 0;
-} .category-item {
-  display:flex;
+}
+.category-item {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align:center;
-} .category-detail {
-  margin-top: 20px; 
-} .category-item h3 {
+  text-align: center;
+}
+.category-detail {
+  margin-top: 20px;
+}
+.category-item h3 {
   font-size: var(--ukuranteks-6);
-} .category-item a {
+}
+.category-item a {
   font-size: var(--ukuranteks-8);
   border: 1px solid var(--putihabu);
   display: inline-block;
   padding: 2px 4px;
   background: var(--gelap);
-  color:var(--putihabu);
-} .category-item img {
-  width: 50px; 
+  color: var(--putihabu);
+}
+.category-item img {
+  width: 50px;
   height: 50px;
   padding: 5px;
   border: 1px solid var(--putihabu);
   border-radius: 5px;
 }
-
 
 /* ====================== Products */
 .products {
@@ -359,72 +375,81 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  margin: 30px auto; 
+  margin: 30px auto;
   flex-direction: column;
 }
 
 .load-more-products {
-  display:inline-block;
-  padding: 5px 10px; 
-  background:var(--sandy-brown); 
-  color:var(--putih);
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--sandy-brown);
+  color: var(--putih);
   border-radius: 300px;
-
 }
 
 .title-center {
   text-align: center;
-} .title-center p {
+}
+.title-center p {
   width: 600px;
   font-weight: 100;
   margin: 20px auto;
-} 
+}
 
 /* Promo produk */
 .product-promo {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 2vw; 
-} .product-promo img {
+  gap: 2vw;
+}
+.product-promo img {
   width: 50%;
   height: auto;
   object-fit: cover;
-} .product-promo a {
+}
+.product-promo a {
   font-size: var(--ukuranteks-2);
   font-weight: bold;
   color: var(--hitam);
   overflow: hidden;
   text-transform: uppercase;
   margin-bottom: 3px;
-} .product-promo .rating {
+}
+.product-promo .rating {
   color: var(--sandy-brown);
   display: flex;
   align-items: center;
   font-size: 16px;
   margin-bottom: 15px;
-} .product-promo .deskripsi {
+}
+.product-promo .deskripsi {
   color: var(--abu-gelap);
   font-size: var(--ukuranteks-7);
   font-weight: var(--tebalteks-300);
   margin-bottom: 10px;
   width: 400px;
-} .product-promo .detail {
+}
+.product-promo .detail {
   margin-top: 30px;
   width: 100%;
-} .product-promo .price-box {
+}
+.product-promo .price-box {
   font-size: var(--ukuranteks-3);
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
-} .product-promo .price {
+}
+.product-promo .price {
   color: var(--gelap);
   font-weight: var(--tebalteks-700);
-} .product-promo del {
+}
+.product-promo del {
   color: var(--abu-gelap);
   font-weight: var(--tebalteks-300);
-} .product-promo .btn-keranjang {
+}
+.product-promo .btn-keranjang {
   background: var(--gelap);
   padding: 8px 15px;
   color: var(--putih);
@@ -434,22 +459,26 @@
   transition: var(--waktutransisi);
   font-size: var(--ukuranteks-9);
   display: inline-block;
-} .product-promo .btn-keranjang:hover {
+}
+.product-promo .btn-keranjang:hover {
   background: var(--hitam);
   color: var(--putih);
-} .product-promo .countdown-desc {
+}
+.product-promo .countdown-desc {
   color: var(--hitam);
   font-size: var(--ukuranteks-9);
   font-weight: var(--tebalteks-600);
   text-transform: uppercase;
   margin-bottom: 10px;
-} .product-promo .countdown {
+}
+.product-promo .countdown {
   display: flex;
   gap: 5px;
   align-items: center;
-} .product-promo .countdown-contents {
+}
+.product-promo .countdown-contents {
   display: flex;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .product-promo .countdown-content {
@@ -457,17 +486,17 @@
   background: var(--putihabu);
   border-radius: 10px;
   text-align: center;
-} .product-promo .display-number {
+}
+.product-promo .display-number {
   color: var(--hitam);
   font-size: var(--ukuranteks-5);
   font-weight: var(--tebalteks-500);
   min-width: 40px;
-} .product-promo .display-text {
+}
+.product-promo .display-text {
   color: var(--davys-gray);
   font-size: var(--ukuranteks-11);
 }
-
-
 
 /* Produk Kami */
 .product-kami {
@@ -475,28 +504,33 @@
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-} .product-kami .product-item {
+}
+.product-kami .product-item {
   border: 1px solid var(--putihabu);
   border-radius: 10px;
   overflow: hidden;
   transition: var(--waktutransisi);
-  flex: 0 1 270px; 
+  flex: 0 1 270px;
   display: flex;
   flex-direction: column;
-} .product-kami img {
+}
+.product-kami img {
   width: 100%;
   height: 100%;
   transition: var(--waktutransisi);
-  object-fit:cover;
-} .product-kami .content {
-  padding: 15px 20px 0; 
-} .product-kami .category {
-  padding: unset; 
+  object-fit: cover;
+}
+.product-kami .content {
+  padding: 15px 20px 0;
+}
+.product-kami .category {
+  padding: unset;
   color: var(--gelap);
   font-size: var(--ukuranteks-9);
   font-weight: var(--tebalteks-500);
   text-transform: uppercase;
-} .product-kami .title {
+}
+.product-kami .title {
   margin: unset;
   font-weight: bold;
   color: hsl(19.9deg 100% 52.41%);
@@ -505,10 +539,12 @@
   letter-spacing: 1px;
   transition: var(--waktutransisi);
   border-bottom: unset;
-} .product-kami .title:hover {
+}
+.product-kami .title:hover {
   color: var(--davys-gray);
-} .product-item.produk9 {
-  width: 200px; 
+}
+.product-item.produk9 {
+  width: 200px;
 }
 
 .product-kami .price-box {
@@ -517,73 +553,81 @@
   font-size: var(--ukuranteks-7);
   color: var(--hitam);
   margin-bottom: 10px;
-} .product-kami .price {
-  font-weight: var(--tebalteks-700); 
-} .product-kami del {
-  color: var(--abu-gelap); 
-} .product-kami .addtochart {
+}
+.product-kami .price {
+  font-weight: var(--tebalteks-700);
+}
+.product-kami del {
+  color: var(--abu-gelap);
+}
+.product-kami .addtochart {
   border: 2px solid;
   background: var(--gelap);
-  padding: 5px 10px; 
-  color: white; 
+  padding: 5px 10px;
+  color: white;
   border: unset;
   margin-bottom: 25px;
   border-radius: 5px;
-} 
-.garansi  {
+}
+.garansi {
   display: inline-block;
-  font-size:10px; 
-  padding: 3px 6px; 
-  background:rgb(255, 178, 34);
-  color:var(--putih);
+  font-size: 10px;
+  padding: 3px 6px;
+  background: rgb(255, 178, 34);
+  color: var(--putih);
   margin-bottom: 10px;
   border-radius: 20px;
 }
 
-
 /* Testimonial Client */
 .testimonials {
   max-width: var(--max-width);
-  margin: auto; 
+  margin: auto;
 }
 
 .testimonials-box {
-  display: flex;    
+  display: flex;
   align-items: stretch;
   gap: 10px;
   justify-content: space-evenly;
   margin-bottom: 50px;
-} .testimonial-card {
+}
+.testimonial-card {
   padding: 30px 20px;
   border: 1px solid var(--putihabu);
   border-radius: 10px;
   text-align: center;
   margin-bottom: 25px;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   width: 470px;
   height: 320px;
   overflow: auto;
-} .testimonial-card img {
+}
+.testimonial-card img {
   margin: auto;
   margin-bottom: 20px;
   border-radius: 50%;
   width: 100px;
   height: auto;
-} .testimonial-card img.icon {
+}
+.testimonial-card img.icon {
   width: 50px;
   height: auto;
   margin-bottom: unset;
-} .testimonial-card img.quotation-img {
+}
+.testimonial-card img.quotation-img {
   margin: auto;
   margin-bottom: 10px;
   width: 26px;
   border-radius: unset;
-} .testimonial-name {
+}
+.testimonial-name {
   font-weight: var(--tebalteks-700);
   text-transform: uppercase;
   color: var(--abu-gelap);
   margin-bottom: 5px;
-} .testimonial-desc {
+}
+.testimonial-desc {
   max-width: 70%;
   margin: auto;
   color: var(--abu-gelap);
@@ -594,11 +638,11 @@
 .testimonial-items {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
-  justify-content: center;  
+  gap: 10px;
+  justify-content: center;
   width: 45%;
-
-} .testimonial-item {
+}
+.testimonial-item {
   border-radius: 10px;
   border: 1px solid var(--putihabu);
   width: 100%;
@@ -608,58 +652,63 @@
   gap: 15px;
   flex-direction: row;
   text-align: left;
-  
-} .testimonial-items h3 {
+}
+.testimonial-items h3 {
   font-weight: var(--tebalteks-700);
   text-transform: uppercase;
   color: var(--abu-gelap);
   margin-bottom: 5px;
   font-size: var(--ukuranteks-10);
-} .testimonial-items p {
+}
+.testimonial-items p {
   max-width: 70%;
   color: var(--abu-gelap);
   font-size: var(--ukuranteks-11);
-} .testimonial-items img {
+}
+.testimonial-items img {
   width: 50px;
   height: auto;
   border-radius: 50%;
-} .testimonial-item.active {
-  background:rgb(241, 241, 241);
 }
-
+.testimonial-item.active {
+  background: rgb(241, 241, 241);
+}
 
 /* Ulasan Pelanggan Pada About Me.html */
 .ulasan {
   max-width: var(--max-width);
-  margin: 40px auto; 
-} .ulasan .title-center .about-text {
+  margin: 40px auto;
+}
+.ulasan .title-center .about-text {
   width: 60%;
   line-height: 2;
-} .ulasan .title-center .about-title {
+}
+.ulasan .title-center .about-title {
   font-size: 30px;
-} 
+}
 .ulasan .group {
-  margin-top: 20px; 
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 .ulasan input,
 .ulasan textarea {
   width: 50%;
   margin: auto;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   font-family: inherit;
-} .ulasan button, .ulasan a {
-  display: inline-block;
-  margin: auto; 
-  padding: 5px 30px; 
-  margin-top: 10px; 
-  border-radius: 5px;
-  background:var(--gelap); 
-  color:var(--putihabu)
 }
-
+.ulasan button,
+.ulasan a {
+  display: inline-block;
+  margin: auto;
+  padding: 5px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: var(--gelap);
+  color: var(--putihabu);
+}
 
 /* Footer */
 footer {
@@ -667,50 +716,59 @@ footer {
   padding: 30px 0;
   max-width: var(--max-width);
   margin: auto;
-} .footer-nav {
+}
+.footer-nav {
   border-bottom: 1px solid var(--abugelap2);
   padding-bottom: 30px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-evenly;
-} .footer-nav .nav-title {
+}
+.footer-nav .nav-title {
   position: relative;
   color: var(--putih);
   font-size: var(--ukuranteks-7);
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 5px;
-} .footer-nav-item {padding: 3px 0;}
+}
+.footer-nav-item {
+  padding: 3px 0;
+}
 .footer-nav-link,
 .footer-nav-item .content {
   color: var(--abu-gelap);
   font-size: var(--ukuranteks-7);
   text-transform: capitalize;
   transition: var(--waktutransisi);
-} .footer-nav-item.flex-start {
+}
+.footer-nav-item.flex-start {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-} .footer-nav-item .content {
+}
+.footer-nav-item .content {
   font-style: normal;
   margin-bottom: 5px;
-} .footer-nav-item .icon-box {
+}
+.footer-nav-item .icon-box {
   color: var(--abu-gelap);
   font-size: 25px;
-} .footer-bottom {
+}
+.footer-bottom {
   text-align: center;
-} .copyright {
+}
+.copyright {
   color: var(--abu-gelap);
   font-size: var(--ukuranteks-8);
   font-weight: var(--tebalteks-500);
   text-transform: capitalize;
   letter-spacing: 1.2px;
-} .copyright a {
+}
+.copyright a {
   display: inline;
   color: inherit;
 }
-
-
 
 /* Modal Chart */
 .modal-chart.show {
@@ -718,30 +776,30 @@ footer {
   pointer-events: unset;
 }
 .modal-chart {
-  transition: all 200ms ease 0s; 
-  position:absolute;
+  transition: all 200ms ease 0s;
+  position: absolute;
   opacity: 0;
   pointer-events: none;
-  width: 300px; 
+  width: 300px;
   height: auto;
   border: 1px solid var(--davys-gray);
-  padding: 20px; 
-  gap: 10px; 
-  border-radius: 5px; 
+  padding: 20px;
+  gap: 10px;
+  border-radius: 5px;
   overflow: auto;
   background: white;
   z-index: 999;
-  right:92px;
+  right: 92px;
   top: 78px;
 }
 
 .modal-chart a {
-  display:none;
-  padding: 5px; 
+  display: none;
+  padding: 5px;
   border: 1px solid;
-  background:var(--gelap);
+  background: var(--gelap);
   border-radius: 5px;
-  color:var(--putihabu);
+  color: var(--putihabu);
   margin-top: 10px;
 }
 
@@ -749,17 +807,16 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .chart-list {
-  display:flex; 
-  gap: 10px; 
-  align-items:center; 
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .chart-list img {
-  width: 90px; 
+  width: 90px;
   border: 1px solid var(--spanish-gray);
   border-radius: 10px;
 }
@@ -775,36 +832,31 @@ footer {
 .chart-list p {
   font-size: var(--ukuranteks-9);
 }
-.chart-list:nth-child(n+2) {
+.chart-list:nth-child(n + 2) {
   border-top: 1px solid;
-  margin-top: 10px; 
-  padding-top: 10px; 
-  
+  margin-top: 10px;
+  padding-top: 10px;
 }
-
 
 .checkout {
-  height: 100%; 
-  display: flex; 
-  justify-content: center; 
-  align-items:center; 
-
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .modal-center {
-  width: 80%; 
+  width: 80%;
   display: flex;
-  flex-direction:column; 
-  gap: 10px; 
-  padding: 10px; 
-  justify-content: center; 
-  align-items:center; 
-  text-align:center;
-  
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .modal-center ion-icon {
-  font-size: 100px; 
-  color:greenyellow;
+  font-size: 100px;
+  color: greenyellow;
 }
