@@ -91,7 +91,7 @@ var mytime = setInterval(() => {
     clearInterval(mytime);
   }
   // Waktu Target
-  const tanggalTertentu = new Date("2023-12-15T00:00:00");
+  const tanggalTertentu = new Date("2023-12-30T00:00:00");
   // Selisih waktu
   const selisihWaktu = tanggalTertentu - waktuSekarang;
   // Mengkonversi selisih waktu menjadi hari, jam, menit, dan detik
